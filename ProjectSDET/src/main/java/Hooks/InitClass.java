@@ -1,5 +1,6 @@
 package Hooks;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 import BaseClass.BaseClass;
@@ -10,7 +11,7 @@ public class InitClass extends BaseClass{
 
 
 	@Before
-	public void startUp() 
+	public void startUp() throws Exception 
 	{
 		browserInti("chrome");
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
